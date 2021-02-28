@@ -26,7 +26,31 @@ header.fix {
     z-index: 999;
     width: 100%;
 }
-
+body {
+    position: relative;
+    min-height: 100%;
+    text-align: right;
+}
+body {
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    background-color: #fff;
+}
+.rsp_menu .item a {
+    padding: 7px 0;
+}
+.nav_menu .nav_item a, .rsp_menu .item a {
+    display: inline-block;
+    vertical-align: middle;
+    color: rgba(255,255,255,0.6);
+    font-size: 1.3rem;
+    line-height: 31px;
+    text-align: center;
+    padding: 7px 15px;
+    width: 100%;
+    transition: color 0.3s linear;
+}
 .header_part2 {
     position: relative;
     z-index: 5;
@@ -84,7 +108,7 @@ ul, ol {
     position: relative;
 }
 .logHead{
-    margin-right: 25vw;
+    margin-right: 20vw;
 }
 * {
     margin: 0;
@@ -653,6 +677,25 @@ a, i, h1, h2, h3, h4, h5, h6, p, a:hover, a:focus, a:active {
     color: #125292;
     text-align: center;
 }
+.insurance_slider .insurance_item #image1 {
+    background-image: url(../images/compare.png);
+}
+.home_part4 .insurance_slider .insurance_item {
+    border-radius: 4px;
+    background: #f5f5f5;
+    padding: 60px 25px 25px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    min-height: 300px;
+    box-shadow: 0 5px 8px rgb(0 0 0 / 50%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'at1';
+    box-sizing: border-box;
+}
 @media (min-width: 992px) and (max-width: 1199px)
 {
     .hidden-md {
@@ -730,7 +773,51 @@ li > p {
         padding-left: 45px;
         padding-right: 45px;
     }
-
+    .owl-carousel .owl-nav .owl-next i, .owl-carousel .owl-nav .owl-prev i {
+        height: 35px;
+        width: 35px;
+        display: inline-block;
+        font-size: 2rem;
+        line-height: 31px;
+        box-shadow: 0 0 5px #ddd;
+        border: solid 2px #eee;
+        color: #125292;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        margin-top: -20px;
+    }
+    .owl-carousel .owl-nav .owl-prev i {
+        right: 0;
+    }
+    .owl-next{
+        margin-left: -73vw;
+    }
+    .home_part4Mobile .insurance_slider .insurance_item {
+        padding-left: 45px;
+        padding-right: 45px;
+        background-color: #f5f5f5;
+    }
+    .home_part4Mobile .insurance_slider .insurance_item {
+        border-radius: 4px;
+        background: #f5f5f5;
+        padding: 60px 25px 25px;
+        width: 68vw;
+        position: relative;
+        text-align: center;
+        min-height: 300px;
+        box-shadow: 0 5px 8px rgb(0 0 0 / 50%);
+    }
+}
+.home_part4Mobile{
+    border-radius: 4px;
+   
+    padding: 60px 25px 25px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    min-height: 300px;
+    box-shadow: 0 5px 8px rgb(0 0 0 / 50%);
 }
 .home_part4 .insurance_slider .insurance_item {
     border-radius: 4px;
@@ -786,7 +873,7 @@ li > p {
     line-height: 28px;
 }
 .insurance_slider .insurance_item p {
-    font-size: 2.5vh;
+    font-size: 2vh;
     line-height: 26px;
     color: #393939;
     text-align: justify;
@@ -794,6 +881,10 @@ li > p {
 .owl-carousel .owl-nav {
     text-align: center;
     width: 100%;
+}
+.closeNav{
+    float: left;
+    font-size: 4vh !important;
 }
 .owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
     cursor: pointer;
@@ -976,6 +1067,7 @@ input[disabled], .disabled, .disabled * {
 
 }
 .slide-btn {
+    margin-left: 1vw;
     /* border: none; */
     background: none;
     color:transparent;
@@ -992,7 +1084,37 @@ input[disabled], .disabled, .disabled * {
     background-color: #ed8e6c;
     cursor: pointer;
     outline: none;
+    outline-style: unset;
     
+  }
+  @-moz-document url-prefix() {
+      .logHead{
+          margin-right: 15vw;
+      }
+      .owl-item{
+        width: 19vw !important;
+      }
+      @media only screen and(max-width:992px){
+        .owl-item{
+            width:345px !important;
+            /* max-width: unset !important; */
+        }
+      }
+  }
+
+  .non{
+      display: none !important;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    .owl-item{
+        width: 20vw !important;
+    }
+  } 
+  
+  .slide-btn:active{
+    border: solid 2px #e4a90d;
+    border-radius: 50%;
+    outline: none;
   }
   
   /* .slide-btn.active, .slide-btn:hover {
@@ -1055,3 +1177,258 @@ input[disabled], .disabled, .disabled * {
     text-align: right;
     padding: 5px 10px;
 }
+.home_part0 .features_part {
+    margin-top: 15px;
+}
+.tab_style1 .tab_btn1 .item p {
+    padding: 10px 0;
+    line-height: 28px;
+    font-size: 1.4rem;
+    color: #125292;
+    margin: 0;
+}
+.car-form {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+/* responsive */
+@media only screen and (max-width: 992px)
+{
+    .nav_menu {
+        display: none;
+    }
+    .rsp_menu {
+        display: block;
+        left: 2vw;
+    position: relative;
+    }
+    .rsp_menu .item {
+        float: right;
+        width: 12.5%;
+    }
+    .rsp_menu .item:first-child .icon4 {
+        background-image: url(../images/listmenu.png);
+    }
+    .rsp_menu .item .icon4, .rsp_menu .login_list .item2 .icon4 {
+        height: 34px;
+        width: 34px;
+        display: inline-block;
+        vertical-align: middle;
+        background: transparent none no-repeat center / contain;
+    }
+    .rsp_menu .rsp_box, .rsp_menu .login_box {
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        text-align: right;
+        z-index: 200;
+    }
+    .rsp_menu .rsp_box .rsp_overley, .rsp_menu .login_box .login_overley {
+        background-color: rgba(0, 0, 0, 0.5);
+        bottom: 0;
+        /* cursor: url(../images/icon/close_menu_responsive.png), auto; */
+        display: none;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+    }
+    .rsp_menu .rsp_box .rsp_list, .rsp_menu .login_box .login_list {
+        background-color: #f5f5f5;
+        height: 100%;
+        position: absolute;
+        right: -270px;
+        top: 0;
+        -webkit-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+        width: 270px;
+        box-shadow: 0 5px 5px 2px rgb(0 0 0 / 10%);
+        z-index: 99992;
+    }
+    .rsp_menu .rsp_box .rsp_list .rsp_logo, .rsp_menu .login_box .login_list .item2:first-child {
+        border-bottom: none;
+        text-align: center;
+        padding: 15px 0;
+        background-color: #125292;
+    }
+    .rsp_menu .rsp_box .rsp_list .rsp_logo .logo {
+        width: 150px;
+        padding: 0 15px;
+    }
+    .rsp_menu .rsp_box .rsp_list a {
+        text-align: right;
+        color: #125292;
+    }
+    .rsp_menu .rsp_box .list {
+        height: 414px;
+        overflow: auto;
+    }
+    .mCustomScrollbar.mCS_no_scrollbar {
+        -ms-touch-action: auto;
+        touch-action: auto;
+    }
+    .mCustomScrollBox {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        max-width: 100%;
+        outline: none;
+        direction: ltr;
+    }
+    .mCS-dir-rtl > .mCSB_inside > .mCSB_container {
+        margin-right: 0;
+        
+    }
+    .mCS-dir-rtl > .mCSB_inside > .mCSB_container {
+        margin-left: 0 !important;
+    }
+    .rsp_menu .rsp_box .rsp_list .item2 .name {
+        border-bottom: 1px dashed #494854;
+    }
+    .rsp_menu .rsp_box .rsp_list a {
+        text-align: right;
+        color: #125292;
+    }
+    .rsp_menu .item:nth-child(2) .icon4 {
+        background-image: url(../images/tel.png);
+    }
+    .rsp_menu .item .icon4, .rsp_menu .login_list .item2 .icon4 {
+        height: 34px;
+        width: 34px;
+        display: inline-block;
+        vertical-align: middle;
+        background: transparent none no-repeat center / contain;
+    }
+    .rsp_menu .item {
+        float: right;
+        width: 12.5%;
+    }
+    .rsp_menu .item .logo {
+        width: 100px;
+    }
+    .rsp_menu .item a.logo {
+        padding: 7px 15px;
+    }
+    .rsp_menu .item:nth-child(3) {
+        width: 50%;
+        text-align: center;
+    }
+    .rsp_menu .item:nth-child(4) .icon4 {
+        background-image: url(../images/bell.png);
+    }
+    .rsp_menu .item .icon4, .rsp_menu .login_list .item2 .icon4 {
+        height: 34px;
+        width: 34px;
+        display: inline-block;
+        vertical-align: middle;
+        background: transparent none no-repeat center / contain;
+    }
+    .remember_overley {
+        background-color: transparent;
+        bottom: 0;
+        /* cursor: url(../images/icon/close_menu_responsive.png), auto; */
+        display: none;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 99;
+    }
+    .rsp_menu .item:last-child .icon4, .rsp_menu .login_list .item2 .icon4 {
+        background-image: url(../images/basket.png);
+    }
+    .home_part0 {
+        height: 150px;
+    }
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .hidden-xs {
+        display: none !important;
+    }
+    .tab_style1 .tab_btn1 {
+        margin-top: 19px;
+    }
+    .tab_style1 .tab_btn1 .item {
+        width: 20%;
+    }
+    .tab_style1 .tab_btn1 .drop_submenu {
+        min-width: 140px;
+        left: -20px;
+        right: -20px;
+        margin: 0 auto;
+        background-color: #f5f5f5;
+        box-shadow: 0px 5px 8px rgb(0 0 0 / 50%);
+        border-radius: 10px;
+        padding-top: 20px;
+        top: 53px;
+    }
+    .tab_style1 .tab_btn1 .item p {
+        font-size: 1.8vh;
+        font-weight: bold;
+    }
+    .tab_style1 .tab_content1 {
+        margin-top: 0;
+    }
+    .tab_style1 .tab_btn1 .item .icon_insurance, .tab_style1 .tab_btn1 .drop_submenu a .icon_insurance {
+        height: 45px;
+        width: 45px;
+    }
+    .car-form {
+        padding: 0;
+        margin-top:5vh;
+    }
+    .step {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .previous{
+        top:-3vh;
+    }
+    .next{
+        top:9vh;
+    }
+    .owl-carousel .item {
+        position: relative;
+        z-index: 100; 
+        -webkit-backface-visibility: hidden; 
+      }
+      
+      /* end fix */
+      .owl-nav > div {
+        margin-top: -26px;
+        position: absolute;
+        top: 50%;
+        color: #cdcbcd;
+      }
+      
+      .owl-nav i {
+        font-size: 52px;
+      }
+      
+      .owl-nav .owl-prev {
+        left: -30px;
+      }
+      
+      .owl-nav .owl-next {
+        right: -30px;
+      }
+      .owl-item{
+          width:345px !important;
+      }
+    html,body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}
+

@@ -166,3 +166,41 @@ $('.slider').each(function() {              // For every slider
   
   
   });
+
+  //slider p
+  $('.owl-carousel').owlCarousel({
+    rtl:true,
+    // loop: true,
+    margin: 10,
+    autoWidth:true,
+    nav: true,
+    dots:false,
+    navText: [
+      "<i class='fa fa-caret-right'></i>",
+      "<i class='fa fa-caret-left'></i>"
+    ],
+    // autoplay: true,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+        autoplay:false
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 5
+      }
+    }
+  })
+  $(".closeNav").click(function(){
+    $(".rsp_box").hide();
+  })
+  if($(window).width()<600){
+    
+    $(".headPc").addClass("non");
+    $(".headMobile").removeClass("non")
+    // $(".home_part4").addClass("non")
+    // $(".home_part4Mobile").removeClass("non")
+  }
