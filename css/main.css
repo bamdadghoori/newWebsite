@@ -1107,7 +1107,7 @@ input[disabled], .disabled, .disabled * {
   }
   @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
     .owl-item{
-        width: 20vw !important;
+        width: 19vw !important;
     }
   } 
   

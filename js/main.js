@@ -172,7 +172,7 @@ $('.slider').each(function() {              // For every slider
     rtl:true,
     // loop: true,
     margin: 10,
-    autoWidth:true,
+    // autoWidth:true,
     nav: true,
     dots:false,
     navText: [
@@ -190,7 +190,7 @@ $('.slider').each(function() {              // For every slider
         items: 1
       },
       1000: {
-        items: 5
+        items: 4
       }
     }
   })
